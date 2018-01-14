@@ -3,22 +3,24 @@
 body {    
     background-image: url('../images/background_5.jpg');  
     background-repeat: no-repeat;
-    
+    margin:0;
+	padding:0;
+	height:100%;   
 }
 
 /* strona główna*/
 
 .box {
-    height: 550px;
-    width: 750px;
-    margin: auto;
-    top: 20%;
-    left:30%;
+    top:250px;
+    left:550px;
+    bottom:250px;
+    right:550px;
+    position:absolute;   
     background-color: #ffffff;
     opacity: 0.6;
-    border: 1px solid white;
-    color: black;
-    position: absolute;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;    
 }
 
  h1 {
@@ -39,9 +41,9 @@ p {
 }
 
 input {
-    height: 60px;
-    width: 300px;
-    margin-left: 220px;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px 20px 20px 20px;
     border-radius: 5px;
     border: 1px solid chocolate;
     text-align:center;
@@ -53,13 +55,14 @@ input {
 }
    
 .btn {
-    height: 60px;
-    width: 300px;
+    /*height: 60px;
+    width: 300px;*/
     background-color: chocolate;
     border-radius: 5px;
     border: 1px solid black;
-    margin-top: 30px;
-    margin-left: 220px;
+    margin: 20px auto;
+    display: flex;
+    padding: 20px 65px 20px 65px;
     color: white;
     font-family: 'Libre Baskerville';
     font-size: 20px;
@@ -87,77 +90,80 @@ a {
 
 .a {
     text-align: center;
-    height: 150px;
-    width:auto; 
+    /*height: 150px;*/
 }
 
 .greet{
-    margin-left: 35%; 
-    float: left;
-    width: 480px; 
-    position: absolute;    
+    margin: 60px 0px 30px 0px;
+    display:inline-block;
 }
 
-.counter { 
-        
-    float: right;
-    margin-right: 5%;   
+.counter {  
+    display: inline-block;
+    margin-left: 20px;
+   
 }
 
 .text{
     padding-top: 15px;
-    height: 60px;
+    /*height: 60px;*/
     font-size: 22px;
 }
 
+.level { 
+    margin:120px 450px;
+    left: 450px;
+    position: absolute;
+    float: right;
+    background-color: chocolate;
+    border-radius: 5px;
+    border: 1px solid black;
+    color:white;
+    padding:20px 40px;
+    opacity: 0.6;
+    font-family: 'Libre Baskerville';
+    font-size: 20px;    
+}
+
+.board_1  {
+   position: absolute;
+   top:360px;
+   left:765px;
+   /*bottom:200px;
+   right:500px;*/
+}
 img {  
     opacity: 0.9;     
 }
 
 .img1 {  
-    width: 412px;
-    height: 258px;
-    top: 40%;
-    left:39%;
     position: absolute;
+    top:360px;
+    left:765px;
+    bottom:200px;
+    right:500px;
 }
 
-.level {    
-    height:45px;
-    width: 130px;
-    background-color: chocolate;
-    border-radius: 5px;
-    border: 1px solid black;
-    color:white;
-    margin-top:5%;
-    margin-left:850px;
-    opacity: 0.6;
-    font-family: 'Libre Baskerville';
-    font-size: 20px;
-    padding-left: 55px;
-    padding-top: 10px;
+.tile {
+    cursor: pointer;
 }
 
-.board_1  {
-    position:absolute;
-    top: 40%;
-    left: 39%;   
+.tile:hover {
+    opacity:0.7;
 }
 
-.bottom_nav{
-  margin-top: 25%
-   /* margin-top: 25%;
-    margin-left: 22%;  
-    */
+.bottom_nav {
+    display: inline-flex;
+    left:520px;
+    position: absolute;
+    bottom:50px;
 }
 
 .navigation {  
-   
-    display: inline-block;
-    margin-right: 50px;
     font-size: 25px;
     cursor: pointer;
     opacity: 0.8;
+    margin-right:50px;
   
 }
 
@@ -168,42 +174,34 @@ img {
 /*Plansza 2*/
 
 .img2 {  
-    margin-left: 37%;
-    margin-top: 30px;
+    position: absolute;
+    top:360px;
+    left:710px;
 }
 
 .board_2  {  
     position:absolute;
-    top: 35%;
-    left: 37%; 
-}
-
-.bottom_nav2{
-    
-    margin-top: 5%;
-    
-    
+    top:360px;
+    left:710px; 
 }
 
 /*Plansza 3*/
 
 .img3 { 
-    margin-left: 33.5%;
-    margin-top: 30px;
-    
+    /*margin-left: 33.5%;*/
+    position: absolute;
+    top:360px;
+    left:660px;   
 }
 
 .board_3  {
     position:absolute;
-    top: 35%;
-    left:33.5%;
-    text-align: center;
+    top:360px;
+    left:660px;
 }
 
-.bottom_nav3 {
-    
- margin-top: 5%;
-     margin-left: 15%;
-
-    
-}*/
+.level3 {
+   
+    left:720px; 
+    bottom:50px;    
+}
