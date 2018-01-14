@@ -13,7 +13,7 @@ body {
 .box {
     top:250px;
     left:550px;
-    bottom:250px;
+    bottom:160px;
     right:550px;
     position:absolute;   
     background-color: #ffffff;
